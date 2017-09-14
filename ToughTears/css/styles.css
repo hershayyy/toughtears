@@ -5,3 +5,94 @@
 #b5be7f
 #e3cc89
 */
+
+body {
+	background: #475f5f url("../img/TT_background_Image.png") no-repeat left top;
+	background-size: contain;
+}
+
+.show-on-med {
+	display: none;
+}
+
+.top-bar {
+	display: block;
+	height: 80px;
+}
+
+.bottom-bar {
+	height: 80px;
+	margin-top: 20px;
+}
+
+.SM-images {
+	height: 50px;
+	float: right;
+	margin-left: 40px;
+}
+
+.TTlogo {
+	height: 80px;
+	float: left;
+}
+
+.home-body {
+	padding-top: 20px;
+}
+
+.bkg-img {
+	width: 100%;
+	border: 20px solid black;
+	box-sizing: border-box;
+}
+/**
+.home-body {
+	position: relative;
+}
+
+.bkg-img {
+	width: 100%;
+	border: 10px solid #000000;
+	position: absolute;
+	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+**/
+
+.contact {
+	text-align: center;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.contact h3 {
+	color: #e3cc89;
+	font-size: 150%;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 2px;
+}
+
+.contact a {
+	color: #b5be7f;
+	letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+	.hide-on-med {display: none;}
+	.show-on-med {display: block;}
+	.TTlogo {float: none; display: block; margin: 0 auto;}
+	.bkg-img {border: 10px solid black;}
+	
+}
+
+@media only screen and (max-width: 454px) {
+	.SM-images {height: 35px; margin-left: 15px;}
+	.bkg-img {border-left: none; border-right: none; border-top: 5px solid black; border-bottom: 5px solid black; width: 115%; margin-left: -20px;}
+}
+
+@media only screen and (max-width: 326px) {
+	.top-bar {height: 60px;}
+	.TTlogo {height: 60px;}
+}
