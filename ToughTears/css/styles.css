@@ -27,8 +27,15 @@ body {
 
 .SM-images {
 	height: 50px;
+	margin: 0 auto;
+	display: block;
+}
+
+.SM-button {
+	width: 80px;
+	height: 70px;
 	float: right;
-	margin-left: 40px;
+	margin-left: 10px;
 }
 
 .TTlogo {
@@ -90,6 +97,11 @@ body {
 	letter-spacing: 1px;
 }
 
+@media only screen and (max-width: 1000px) {
+	.SM-images {height: 40px;}
+	.SM-button {width: 60px;}
+}
+
 @media only screen and (max-width: 768px) {
 	.hide-on-med {display: none;}
 	.show-on-med {display: block;}
@@ -100,12 +112,15 @@ body {
 
 @media only screen and (max-width: 454px) {
 	.SM-images {height: 35px; margin-left: 15px;}
+	.SM-button {width: 50px;}
 	.bottom-bar {height: 45px;}
 	.bkg-img {border: 5px solid black;}
 	.location-info h3 {font-size: 150%}
 }
 
-@media only screen and (max-width: 326px) {
+@media only screen and (max-width: 330px) {
+	.SM-images {height: 28px;}
+	.SM-button {width: 43px; margin-left: 7px;}
 	.top-bar {height: 60px;}
 	.TTlogo {height: 60px;}
 }
